@@ -1,0 +1,13 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "potion_launcher:potion_launcher"
+      }
+    }
+  },
+  "rewards": {
+    "function": "potion_launcher:craft/potion_launcher"
+  }
+}
