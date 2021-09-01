@@ -9,5 +9,5 @@
     loot replace entity @s weapon.mainhand 1 mine 100001 0 100000 debug_stick
 
 # 音
-    playsound minecraft:block.piston.contract player @a ~ ~ ~ 2 1.5
-    playsound minecraft:item.crossbow.loading_end player @s ~ ~ ~ 2 1
+    execute at @s run playsound minecraft:block.piston.contract player @a ~ ~ ~ 2 1.5
+    execute at @s run playsound minecraft:item.crossbow.loading_end player @s ~ ~ ~ 2 1

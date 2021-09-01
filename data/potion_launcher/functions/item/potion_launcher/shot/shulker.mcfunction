@@ -18,7 +18,7 @@
     execute as @e[type=shulker_bullet,tag=Pot.L_ShulkerInit] at @s rotated as @p[tag=Chuz_This] run function potion_launcher:entity/shulker/init
 
 # 再装填
-    function potion_launcher:item/potion_launcher/consume
+    execute in overworld run function potion_launcher:item/potion_launcher/consume
 
 # リセット
     scoreboard players reset @s Chuz.Speed

@@ -5,4 +5,4 @@
     scoreboard players reset @s Pot.L_Charge
     
 # 再装填
-    function potion_launcher:item/potion_launcher/consume
+    execute in overworld run function potion_launcher:item/potion_launcher/consume

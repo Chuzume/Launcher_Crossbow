@@ -1,5 +1,9 @@
+# サウンド
+    execute at @s run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 1 1.5
+    execute at @s run playsound minecraft:block.note_block.xylophone player @a ~ ~ ~ 1 1
+    execute at @s run execute anchored eyes run particle smoke ^ ^ ^1 0 0 0 0.05 5
 
-# 現状はオフハンドに入れると戻ってくる
+# 戻ってくる
     data remove storage chuz:context Item
     data modify storage chuz:context Item.Mainhand merge from entity @s SelectedItem
     data modify storage chuz:context Item.Offhand merge from entity @s Inventory[{Slot:-106b}]
@@ -8,5 +12,4 @@
     data modify block 100001 0 100000 Items append from storage chuz:context Item.Offhand
     loot replace entity @s weapon.mainhand mine 100001 0 100000 debug_stick
     data modify block 100001 0 100000 Items append from storage chuz:context Item.Mainhand
-    execute if data storage chuz:context Item.Mainhand run loot replace entity @s weapon.offhand mine 100001 0 100000 debug_stick
-    #execute if data storage chuz:context Item.Mainhand run loot spawn ~ ~ ~ mine 100001 0 100000 debug_stick
+    loot replace entity @s weapon.offhand mine 100001 0 100000 debug_stick

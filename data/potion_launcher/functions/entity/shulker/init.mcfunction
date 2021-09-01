@@ -5,8 +5,8 @@
     execute store result score @s Chuz.Speed run scoreboard players get @p[tag=Chuz_This] Chuz.Speed
     execute store result score @s Pot.L_Life run scoreboard players get @p[tag=Chuz_This] Pot.L_Life
 
-# ポーションコピー
-    data modify entity @s Item{} set from storage chuz:context Item.Mainhand.tag.ChuzData.LoadedItem
+# オーナーコピー
+    data modify entity @s Owner set from entity @p[tag=Chuz_This] UUID
 
 # 射出
     function potion_launcher:move

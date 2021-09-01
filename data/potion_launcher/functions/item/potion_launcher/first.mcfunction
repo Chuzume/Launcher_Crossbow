@@ -19,8 +19,8 @@
     loot replace entity @s weapon.mainhand 1 mine 100001 0 100000 debug_stick
 
 # サウンド
-    playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 1 2
-    playsound minecraft:block.note_block.xylophone player @a ~ ~ ~ 1 2
-    playsound minecraft:block.iron_door.open player @a ~ ~ ~ 1 2
-    playsound minecraft:block.piston.extend player @a ~ ~ ~ 2 1.5
-    execute anchored eyes run particle crit ^ ^ ^1 0 0 0 0.5 5
+    execute at @s run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 1 2
+    execute at @s run playsound minecraft:block.note_block.xylophone player @a ~ ~ ~ 1 2
+    execute at @s run playsound minecraft:block.iron_door.open player @a ~ ~ ~ 1 2
+    execute at @s run playsound minecraft:block.piston.extend player @a ~ ~ ~ 2 1.5
+    execute at @s run execute anchored eyes run particle crit ^ ^ ^1 0 0 0 0.5 5
