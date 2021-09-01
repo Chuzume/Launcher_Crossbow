@@ -4,7 +4,6 @@
 
 # 目線の高さに召喚
     execute anchored eyes run summon tnt ^ ^ ^ {Fire:2,Tags:["Pot.L_TNTInit","Pot.L_Projectile"],Fuse:30}
-    item replace entity @s[gamemode=!creative] weapon.offhand with air
 
 # サウンド
     playsound minecraft:entity.arrow.shoot player @a ~ ~ ~ 2 0.5

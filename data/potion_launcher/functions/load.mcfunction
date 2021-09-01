@@ -3,7 +3,7 @@
     scoreboard objectives add Pot.L_Shot minecraft.used:minecraft.crossbow
     scoreboard objectives add Pot.L_Charge dummy
     scoreboard objectives add Pot.L_Life dummy
-     scoreboard objectives add Pot.L_Sound dummy
+    scoreboard objectives add Pot.L_Count dummy
 
 
 # Chuz.Vector0が存在しなければ召喚

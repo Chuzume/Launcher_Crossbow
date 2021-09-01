@@ -10,7 +10,6 @@
 
 # 個数を残弾にする
     execute store result score $Ammo Chuz.Temporary run data get storage chuz:context Item.Mainhand.tag.ChuzData.LoadedItem.Count
-    #execute if data storage chuz:context Item.Mainhand.tag.ChuzData.LoadedItem{id:"minecraft:potion"} run scoreboard players set $Ammo Chuz.Temporary 8
 
 # 置き換え
     execute store result storage chuz:context Item.Mainhand.tag.ChuzData.Ammo int 1 run scoreboard players get $Ammo Chuz.Temporary

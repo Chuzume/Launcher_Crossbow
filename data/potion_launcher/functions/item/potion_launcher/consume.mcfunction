@@ -12,7 +12,6 @@
 # 置き換え
     data modify storage chuz:context Item.Mainhand set from entity @s SelectedItem
     execute store result storage chuz:context Item.Mainhand.tag.ChuzData.Ammo int 1 run scoreboard players get $Ammo Chuz.Temporary
-    execute store result storage chuz:context Item.Mainhand.tag.ChuzData.CoolTime int 1 run data get storage chuz:context Item.tag.ChuzData.MaxCoolTime 1
     execute store result storage chuz:context Item.Mainhand.tag.ChuzData.LoadedItem.Count byte 1 run data get storage chuz:context Item.Mainhand.tag.ChuzData.LoadedItem.Count 0.99999
     loot replace block 100001 0 100000 container.0 loot potion_launcher:set_ammo
     data modify storage chuz:context Item.Mainhand.tag.display.Name set from block 100001 0 100000 Items[0].tag.display.Name

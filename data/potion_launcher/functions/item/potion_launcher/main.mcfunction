@@ -6,6 +6,7 @@
 # チャージ値リセット
     #execute unless predicate potion_launcher:sneak run scoreboard players reset @s Pot.L_Charge
 
+    #tellraw @a [{"text":"storage: "},{"storage":"chuz:context","nbt":"Item.Offhand.tag.ChuzData.LoadedItem"}]
 
 # 弾切れ時
     execute if data storage chuz:context Item.Mainhand.tag.ChuzData{Ammo:0} run function potion_launcher:item/potion_launcher/out_of_ammo

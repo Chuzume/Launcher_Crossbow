@@ -10,3 +10,4 @@
 
 # 音
     playsound minecraft:block.piston.contract player @a ~ ~ ~ 2 1.5
+    playsound minecraft:item.crossbow.loading_end player @s ~ ~ ~ 2 1
