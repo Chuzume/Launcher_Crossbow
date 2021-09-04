@@ -10,7 +10,7 @@
             "item": "minecraft:piston"
         },
         "O": {
-            "tag": "minecraft:planks"
+            "tag": "minecraft:logs"
         },
         "g": {
             "item": "minecraft:gold_ingot"
@@ -19,7 +19,7 @@
             "item": "minecraft:crossbow"
         },
         "i": {
-            "item": "minecraft:iron_ingot"
+            "item": "minecraft:diamond"
         }
     },
     "result": {
