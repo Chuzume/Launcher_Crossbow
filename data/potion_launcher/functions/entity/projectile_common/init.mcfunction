@@ -12,5 +12,5 @@
     function potion_launcher:move
 
 # タグ
-    tag @s remove Pot.L_PearlInit
-    tag @s add Pot.L_Pearl
+    tag @s remove Pot.L_ProjectileInit
+    tag @s add Pot.L_Projectile

@@ -6,6 +6,7 @@
     execute anchored eyes run summon potion ^ ^ ^ {Fire:2,Tags:["Pot.L_PotionBulletInit","Pot.L_Projectile"],Item:{id:"minecraft:splash_potion",Count:1b,tag:{Potion:"minecraft:water"}}}
 
 # サウンド
+    stopsound @s player minecraft:item.crossbow.shoot
     playsound minecraft:item.bottle.fill player @a ~ ~ ~ 2 1.5
     playsound minecraft:entity.arrow.shoot player @a ~ ~ ~ 2 0.5
     playsound minecraft:item.crossbow.shoot player @a ~ ~ ~ 2 1.5

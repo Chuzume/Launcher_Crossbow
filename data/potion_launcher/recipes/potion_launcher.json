@@ -1,13 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "#g ",
-        "gCO",
-        " OA"
+        "#Og",
+        "OC ",
+        "g i"
     ],
     "key": {
         "#": {
-            "item": "minecraft:glass_bottle"
+            "item": "minecraft:piston"
+        },
+        "O": {
+            "tag": "minecraft:planks"
         },
         "g": {
             "item": "minecraft:gold_ingot"
@@ -15,11 +18,8 @@
         "C": {
             "item": "minecraft:crossbow"
         },
-        "O": {
-            "tag": "minecraft:planks"
-        },
-        "A": {
-            "item": "minecraft:cauldron"
+        "i": {
+            "item": "minecraft:iron_ingot"
         }
     },
     "result": {

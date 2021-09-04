@@ -1,4 +1,3 @@
-
 # 空撃ち
     playsound minecraft:block.iron_trapdoor.open player @a ~ ~ ~ 2 1.5
     playsound minecraft:block.wood.break player @a ~ ~ ~ 2 0.9

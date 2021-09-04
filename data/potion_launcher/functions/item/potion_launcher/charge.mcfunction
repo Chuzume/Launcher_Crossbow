@@ -15,9 +15,13 @@
     execute store result storage chuz:context Item.Mainhand.tag.ChuzData.Ammo int 1 run scoreboard players get $Ammo Chuz.Temporary
     loot replace block 100001 0 100000 container.0 loot potion_launcher:set_ammo
     data modify storage chuz:context Item.Mainhand.tag.display.Name set from block 100001 0 100000 Items[0].tag.display.Name
+    data modify storage chuz:context Item.Mainhand.tag.ChargedProjectiles[{}] set from storage chuz:context Item.Mainhand.tag.ChuzData.LoadedItem
     data modify storage chuz:context Item.Mainhand.tag.Charged set value 1b
     data modify block 100001 0 100000 Items set value []
     data modify block 100001 0 100000 Items append from storage chuz:context Item.Mainhand
     loot replace entity @s weapon.mainhand 1 mine 100001 0 100000 debug_stick
 
-# 
+# サウンド
+    execute at @s run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 1 2
+    execute at @s run playsound minecraft:block.note_block.xylophone player @a ~ ~ ~ 1 2
+    execute at @s anchored eyes run particle crit ^ ^ ^1 0 0 0 0.5 5

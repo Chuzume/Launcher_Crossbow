@@ -17,4 +17,4 @@
 
 # スコアが尽きるまで自身を呼び出す
     scoreboard players remove @s Chuz.Temporary 1
-    execute if score @s Chuz.Temporary matches 1.. run function potion_launcher:item/potion_launcher/eject_test2
+    execute if score @s Chuz.Temporary matches 1.. run function potion_launcher:item/potion_launcher/eject/recursion

@@ -13,9 +13,9 @@
     execute store result storage chuz:context Item.Offhand.tag.ChuzData.Ammo int 1 run scoreboard players get $Ammo Chuz.Temporary
     data modify storage chuz:context Item.Offhand.tag.ChuzData.LoadedItem set from storage chuz:context Item.Mainhand
     execute store result storage chuz:context Item.Offhand.tag.ChuzData.LoadedItem.Count byte 1 run scoreboard players get $Ammo Chuz.Temporary
+    data modify storage chuz:context Item.Offhand.tag.ChargedProjectiles[{}] set from storage chuz:context Item.Offhand.tag.ChuzData.LoadedItem
     loot replace block 100001 0 100000 container.0 loot potion_launcher:set_ammo_off
     data modify storage chuz:context Item.Offhand.tag.display.Name set from block 100001 0 100000 Items[0].tag.display.Name
-    data modify storage chuz:context Item.Offhand.tag.Charged set value 1b
     data modify block 100001 0 100000 Items set value []
     data modify block 100001 0 100000 Items append from storage chuz:context Item.Mainhand
     loot replace entity @s weapon.offhand 1 mine 100001 0 100000 debug_stick

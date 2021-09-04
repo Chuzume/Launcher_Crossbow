@@ -4,6 +4,8 @@
     scoreboard objectives add Pot.L_Charge dummy
     scoreboard objectives add Pot.L_Life dummy
     scoreboard objectives add Pot.L_Count dummy
+    scoreboard objectives add Pot.L_Checker dummy
+    scoreboard objectives add Pot.L_Checker2 dummy
 
 
 # Chuz.Vector0が存在しなければ召喚
