@@ -15,3 +15,6 @@
 # 音
     execute at @s run playsound minecraft:block.piston.contract player @a ~ ~ ~ 2 1.5
     execute at @s run playsound minecraft:item.crossbow.loading_end player @s ~ ~ ~ 2 1
+
+# リセット
+    scoreboard players reset @s Pot.L_Charge

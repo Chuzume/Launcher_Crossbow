@@ -19,7 +19,7 @@
     execute as @e[type=tnt,tag=Pot.L_ProjectileInit] at @s rotated as @p[tag=Chuz_This] run function potion_launcher:entity/projectile_common/init
 
 # 再装填
-    function potion_launcher:item/potion_launcher/consume
+    execute in overworld run function potion_launcher:item/potion_launcher/consume
 
 # リセット
     scoreboard players reset @s Chuz.Speed

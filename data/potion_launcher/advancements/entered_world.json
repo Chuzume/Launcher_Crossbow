@@ -5,6 +5,6 @@
     }
   },
   "rewards": {
-    "function": "potion_launcher:install"
+    "function": "potion_launcher:install_check"
   }
 }

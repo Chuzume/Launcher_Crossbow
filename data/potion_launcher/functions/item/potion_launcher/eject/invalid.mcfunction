@@ -11,8 +11,9 @@
     execute positioned 100001 0 100000 as @e[type=item,sort=nearest,limit=1] run data modify entity @s PickupDelay set value 0
     execute positioned 100001 0 100000 as @e[type=item,sort=nearest,limit=1] at @p[tag=Chuz_This] run tp @s ~ ~ ~
 
-# タグリセット
+# リセット
     tag @s remove Chuz_This
+    scoreboard players reset @s Pot.L_Charge
 
 # 空っぽに
     function potion_launcher:item/potion_launcher/out_of_ammo

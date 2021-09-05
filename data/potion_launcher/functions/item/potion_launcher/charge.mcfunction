@@ -25,3 +25,6 @@
     execute at @s run playsound minecraft:block.stone_button.click_on player @a ~ ~ ~ 1 2
     execute at @s run playsound minecraft:block.note_block.xylophone player @a ~ ~ ~ 1 2
     execute at @s anchored eyes run particle crit ^ ^ ^1 0 0 0 0.5 5
+
+# これ以上チャージできない
+    scoreboard players set @s Pot.L_Charge 16
