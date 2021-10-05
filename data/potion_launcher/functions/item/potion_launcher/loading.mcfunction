@@ -23,7 +23,7 @@
     execute in overworld unless data storage chuz:context Item.Offhand.tag.ChuzData.LoadedItem run function potion_launcher:item/potion_launcher/first
 
 # マックス
-    execute if data storage chuz:context Item.Offhand.tag.ChuzData.LoadedItem{Count:64b} if data storage chuz:context Item.Mainhand run function potion_launcher:item/potion_launcher/full
+    execute if data storage chuz:context Item.Offhand.tag.ChuzData.LoadedItem{Count:64b} if data storage chuz:context Item.Mainhand in overworld run function potion_launcher:item/potion_launcher/full
 
 # 取得しなおす
     data modify storage chuz:context Item.Mainhand set from entity @s SelectedItem 
